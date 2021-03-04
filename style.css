@@ -1,0 +1,51 @@
+body{
+    margin:0;
+}
+#n8{
+    padding-top:0.88rem;
+}
+#n9{
+    padding-top:1rem;
+    margin: 1rem;;
+}
+#nav{
+    height:10vh;
+}
+.image1{
+    background:rgb(165, 216, 216);
+    height:30vh;
+}
+.image2{
+    background:rgba(128, 128, 128,0.4);
+    height:33vh;
+}
+.image3{
+    background:silver;
+    height:33vh;
+}
+.image4{
+    background:RGBA(255,255,0, 0.2);
+    height:33vh;
+}
+.image5{
+    background:mistyrose;
+    height:33vh;
+}
+.tofit{
+    padding-top:2rem;
+    padding-left:1px;;a
+}
+@media only screen and (max-width:580px){
+
+
+.con-2{
+    display:flex;
+    justify-content: center;
+
+}
+@media only screen and (min-width:1050px){
+   
+
+}
+
+}

@@ -1,0 +1,48 @@
+body {
+    padding-top: 80px;
+    padding-left:3rem;
+  }
+  
+  .show-cart li {
+    display: flex;
+  }
+  .card {
+    margin-bottom: 20px;
+  }
+  .card-img-top {
+    width: 200px;
+    height: 200px;
+    align-self: center;
+  }
+  .li{
+      display:inline-block;
+      float:right;
+      padding-left:0.22rem;
+      padding-right:0.22rem;
+  }
+  li{
+      display:inline;
+  }
+  .arrow{
+      float:left;
+  }
+  .image2{
+      padding-top:3rem;
+      background:silver;;
+  }
+  .container{
+      margin-top:2rem;
+      padding-top: 3rem;;
+
+  }
+  .image1{
+        background:rgb(165, 216, 216);
+        width:65vw;
+        padding:1rem;
+  }
+  @media only screen and (max-width: 600px){
+      .image1{
+          width:100vw;
+          margin-right:1rem;
+      }
+  }

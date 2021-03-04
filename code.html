@@ -1,0 +1,152 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>Cart Page</title>
+        <link rel ="stylesheet" href="code.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <style>
+        body {
+            padding-top: 80px;
+            padding-left:3rem;
+          }
+          
+          .show-cart li {
+            display: flex;
+          }
+          .card {
+            margin-bottom: 20px;
+          }
+          .card-img-top {
+            width: 200px;
+            height: 200px;
+            align-self: center;
+          }
+          .li{
+              display:inline-block;
+              float:right;
+              padding-left:0.22rem;
+              padding-right:0.22rem;
+          }
+          li{
+              display:inline;
+          }
+          .arrow{
+              float:left;
+          }
+          .image2{
+              padding-top:3rem;
+              background:silver;;
+          }
+          .container{
+              margin-top:2rem;
+              padding-top: 3rem;;
+
+          }
+          .image1{
+                background:rgb(165, 216, 216);
+                width:65vw;
+                padding:1rem;
+          }
+          @media only screen and (max-width: 600px){
+              .image1{
+                  width:100vw;
+                  margin-right:1rem;
+              }
+          }
+          </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse bg-light fixed-top" id='nav'>
+            <div class="row">
+                <div class='col text-center'>
+                   <a href="index.html" class='brand-logo'><img src='assets/travosbrand.png'></a>
+                  <li class='li'><img src='assets/travoscart.png'  data-toggle="modal" data-target="#cart">(<span class="total-count"></span>)</button></li>
+                  <li class='li'><img src='assets/travossearch.png'></li>
+
+                  <!--<button class="clear-cart btn btn-danger">Clear Cart</button></div>-->
+                  </div>
+            </div>
+            </div>
+        </nav>
+        
+        
+        <!-- Main -->
+        <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-10">
+               <div>  
+                   <div class='text-center image2'>  
+                   <img class="" src="assets/travos2.png" alt="Card image cap" height='300'>
+                   </div>
+          <div class="card-block">
+            <h4 class="card-title">Hero</h4>
+            <p class="card-text">Price: N199</p>
+            100% Original Products 
+        This item is not returnable. Items like inner-wear, personal care, make-up, socks and certain accessories do not come under our return policy. Read More.
+        <br>
+        <br>
+        <img src='assets/travostex.png'>
+        <br>
+        <br>
+            <a href="#" data-name="Hero" data-price="1.99" class="add-to-cart btn btn-primary">Add to Cart</a>
+          </div>
+        </div>
+             
+        <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-10">
+               <div>  
+                   <div class='text-center  image1'>  
+                   <img class="" src="assets/travos0.png" alt="Card image cap" height='300' width='550'>
+                   </div>
+          <div class="card-block">
+            <h4 class="card-title">UNEO</h4>
+            <p class="card-text">Price: N199</p>
+            100% Original Products 
+        This item is not returnable. Items like inner-wear, personal care, make-up, socks and certain accessories do not come under our return policy. Read More.
+        <br>
+        <br>
+        <img src='assets/travostex.png'>
+        <br>
+        <br>
+            <a href="#" data-name="UNEO" data-price="1.99" class="add-to-cart btn btn-primary">Add to Cart</a>
+          </div>
+        </div>
+             
+        
+          
+         <!-- Modal -->
+        <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <table class="show-cart table">
+                  
+                </table>
+                <div>Total price: $<span class="total-cart"></span></div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Checkout</button>
+              </div>
+            </div>
+          </div>
+        </div> 
+
+        
+        
+        
+
+  </body>
+  <script src="code.js"></script>
+  </html>
